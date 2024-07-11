@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="pt-ao">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        table{
+            width: 500px;
+            border-collapse: collapse;
+            border: 5px solid gold;
+            box-shadow: 1px 1px 17px 4px #7c519f;
+        }
+
+        thead{
+            background-color: darkgreen;
+            text-align: center;
+        }
+
+        th, td {
+            border: 1px solid black;
+            padding: 10px;
+            text-align: center;
+        }
+
+        td{
+            background-color: aquamarine;
+        }
+
+        .amarelo{
+            background-color: gold;
+        }
+
+        strong#forte{
+            box-shadow: inset 1px 1px 14px 0px gold;
+            padding: 5px;
+            border-radius: 5px;
+        }
+
+        tfoot{
+            background-color: gold;
+        }
+    </style>
+</head>
+<body>
+    <h1>Uso de tabelas grandes</h1>
+
+    <table>
+        <thead>
+            <tr>
+                <td><strong id="forte">Província</strong></td>
+                <td><strong id="forte">População</strong></td>
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr>
+                <td>Luanda</td>
+                <td>20 132 500</td>
+            </tr>
+
+            <tr>
+                <td>Bié</td>
+                <td>19 234 123</td>
+            </tr>
+
+            <tr>
+                <td>Namibe</td>
+                <td>13 123 222</td>
+            </tr>
+
+            <tr>
+                <td>Huambo</td>
+                <td>33 234 234</td>
+            </tr>
+        </tbody>
+
+        <tfoot>
+            <tr>
+                <th>Tota de habitantes</th>
+                <td class="amarelo"><strong>232 423 242</strong></td>
+            </tr>
+        </tfoot>
+
+
+    </table>
+</body>
+</html>
