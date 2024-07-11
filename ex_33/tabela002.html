@@ -27,20 +27,20 @@
             padding: 10px;
             text-align: center;
         }
+        th{
+            box-shadow: inset 1px 1px 14px 0px gold;
+            
+            
+        }
 
         td{
-            background-color: aquamarine;
+            background-color: aqua;
         }
 
         .amarelo{
             background-color: gold;
         }
 
-        strong#forte{
-            box-shadow: inset 1px 1px 14px 0px gold;
-            padding: 5px;
-            border-radius: 5px;
-        }
 
         tfoot{
             background-color: gold;
@@ -53,8 +53,8 @@
     <table>
         <thead>
             <tr>
-                <td><strong id="forte">Província</strong></td>
-                <td><strong id="forte">População</strong></td>
+                <th scope="col">Província</strong></th>
+                <th scope="col" style="width: 50px;">População</strong></th>
             </tr>
         </thead>
 
@@ -82,8 +82,8 @@
 
         <tfoot>
             <tr>
-                <th>Tota de habitantes</th>
-                <td class="amarelo"><strong>232 423 242</strong></td>
+                <th scope="row">Total de habitantes</th>
+                <td class="amarelo">232 423 242</td>
             </tr>
         </tfoot>
 
