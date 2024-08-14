@@ -11,43 +11,39 @@
             text-align: center;
             padding-top: 30px;
         }
-        h1{
-            padding-bottom: 20px;
-            border: 2px solid red;
-        }
 
-        h1#hh{
-            width: 50px;
-        }
     </style>
 </head>
 <body>
     
-    <h1 id="hh">Exemplo de formulários</h1>
+    
 
     <form action="cadastro.php" method="get" autocomplete="on">
 
-        <p>
-            
-            <label for="iemail">E-mail</label>
 
-            <input type="email" name="email" id="iemail" required autocomplete="email">
+        
+        <fieldset>
 
-        </p>
+            <legend>Dados do cliente</legend>
+                <p>
+                    <label for="inome">Nome do cliente</label>
+                    <input type="text" name="nome" id="inome">
+                </p>
+                <p>
+                
+                    <label for="iemail">E-mail</label>
+                    <input type="email" name="email" id="iemail" required autocomplete="email">
+                </p>
+                <p>
+                    <label for="itel">Telefone</label>
+                    <input type="tel" name="telefone" id="itel" autocomplete="tel">
+                </p>
+                <p>
+                    <input type="submit" value="Enviar">
+                    <input type="reset" value="Limpar">
+                </p>
 
-        <p>
-
-            <label for="itel">Telefone</label>
-
-            <input type="tel" name="telefone" id="itel" autocomplete="tel">
-        </p>
-
-        <p>
-
-            <input type="submit" value="Enviar">
-
-            <input type="reset" value="Limpar">
-        </p>
+        </fieldset>
     </form>
 
 
