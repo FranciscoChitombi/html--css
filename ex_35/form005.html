@@ -22,10 +22,33 @@
             <input type="checkbox" name="esfut" id="iesfut"> <label for="iesfut">Futbool</label> <br>
 
 
-            <input type="checkbox" name="esnat" id="iesnat"> <label for="iesnat">Natação</label> <br>
+            <!--AQUI CRIAMOS AS CHECKBOX, ELAS SERVEM PARA MARCAR VÁRIAS OPÇÕES, O CLIENTE OU O USUÁRIO PODE TEM A OPCÇÃO DE ESCOLHER VÁRIAS DAS OPÇÕES-->
+
+            <input type="checkbox" name="esnat" id="iesnat"> <label for="iesnat"> <label for="iesnat">Natação</label> <br>
 
 
-            <input type="checkbox" name="esand" id="iesand"> <label for="iesand">Andebool</label> <br>
+            <input type="checkbox" name="esand" id="iesand" checked>
+            <!--ONDE COLOCAMOS CHECKED , É PARA POR PADRÃO, O USUÁRIO JÁ ENCONTRAR UMAS DAS BOX'S JÁ LECIONADA-->
+            <label for="iesand">Andebool</label> <br>
+
+
+        </fieldset>
+
+        <fieldset>
+
+
+            <legend>Sexo</legend>
+
+            <input type="radio" name="sexo" id="isxmasculino" value="M"> <label for="isxmasculino">Masculino</label> <br>
+
+
+            <!--AO USAR O INPUT RADIO, SE É UMA ALTERNATIVA OU OUTRA, DEVEMOS DEIXA NO 'NAME' IGUAL AOS DOIS.   
+            
+            LEMBRA SE É PARA APENAS UMA ALTERNATIVA-->
+
+            <input type="radio" name="sexo" id="isxfeminino" value="F"> <label for="isxfeminino">Feminino</label> <br>
+
+
         </fieldset>
 
         <p>
@@ -33,5 +56,7 @@
             <input type="reset" value="Limpar">
         </p>
     </form>
+
+    <!--O atributo value em HTML é importante porque ele define o valor que será enviado ao servidor quando um formulário for submetido. Este valor é essencial para identificar qual opção ou dado o usuário escolheu ou inseriu em um campo de formulário.-->
 </body>
 </html>
