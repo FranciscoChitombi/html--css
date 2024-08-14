@@ -11,9 +11,39 @@
     <form action="cadastro.php" method="get">
 
 
-        <label for="iest">Estado</label>
+        <label for="iest">Províncias</label>
 
-        <select name="estado" id="iest"></select>
+        <select name="estado" id="iest">
+
+
+        <optgroup label="Região Sul de Angola">
+
+
+            <option value="ld" selected>Luanda</option>
+            <option value="hb">Huambo</option>
+            <option value="bg">Benguela</option>
+
+            <!--SELECTED, APARECE DIRETAMENTE COM A INTEFACE DO USUÁRIO-->
+
+
+        </optgroup>
+
+
+        <optgroup label="Região Norte de Angola">
+
+
+            <option value="be">Bié</option>
+            <option value="ml">Malange</option>
+            <option value="Cb">Cabinda</option>
+
+
+        </optgroup>
+        </select>
+
+
+        <!--DEPOIS DA TAG SELECT, VAMOS ENCONTRAR A TAG OPTION, É NELA QUE VAMOS COLOCAR TODA BASE DE DADOS QUE TEM NA TAG SELECT.-->
+
+        <!--AINDA HÁ UMA NOVIDADE QUE QUE É A TAG 'OPTGROUP' , ELA, MEIO QUE É UM TÍTULO PARA DETERMINADAS PARTES.-->
 
 
 
